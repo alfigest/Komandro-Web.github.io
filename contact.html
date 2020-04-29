@@ -1,0 +1,158 @@
+<html>
+    <head>
+       
+           
+  <link href="css/style.css" rel="stylesheet">
+        <title>Contact Form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
+        <link href='custom.css' rel='stylesheet' type='text/css'>
+    </head> 
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <img src="logo1.png" width="30" height="30" class="d-inline-block align-top" alt="">
+            <h1 class="navbar-brand" href="#" >KOMANDRO</h1>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav ml-auto">
+                <a class="nav-item nav-link " href="index.html">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link disabled" href="#about">Tentang Kami</a>
+                <a class="nav-item nav-link disabled" href="#skills">Skill Pengajar</a>
+                <a class="nav-item nav-link disabled" href="#facts">Fakta Komandro</a>
+                <a class="nav-item nav-link disabled" href="#team">Team</a>
+               <b> <a class="nav-item nav-link active" href="#" style="color: #18d26e;">Saran</a></b>
+              </div>
+            </div>
+          </nav>
+
+
+          
+    <div style="width:80%;margin:0 auto">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-xl-8 offset-xl-2 py-5">
+
+                    <h2 style="text-align: center;">Beri saran untuk kami</h2>
+
+                   
+
+                    <!-- We're going to place the form here in the next step -->
+                    <form></form> 
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js" integrity="sha256-dHf/YjH1A4tewEsKUSmNnV05DDbfGN3g7NMq86xgGh8=" crossorigin="anonymous"></script>
+        <script src="http://code.angularjs.org/1.2.6/angular.js"></script>
+
+        
+    </body>
+</html>
+
+<form id="contact-form" method="post" action="contact.php" role="form">
+
+    <div class="messages"></div>
+
+    <div class="controls">
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="form_name">Nama Depan *</label>
+                    <input id="form_name" type="text" name="name" class="form-control" placeholder="Masukkan nama depan anda *" required="required" data-error="Firstname is required.">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="form_lastname">Nama belakang *</label>
+                    <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Masukkan nama belakang anda *" required="required" data-error="Lastname is required.">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">     
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="form_email">Email *</label>
+                    <input id="form_email" type="email" name="email" class="form-control" placeholder="Masukkan email anda *" required="required" data-error="Valid email is required.">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="form_need">Rincian saran anda *</label>
+                    <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
+                        <option value="">Pilih salah satu</option>
+                        <option value="Request quotation">Tentang Website</option>
+                        <option value="Request order status">Tentang Lokasi</option>
+                        <option value="Request copy of an invoice">Tentang Pengajar</option>
+                        <option value="Other">Lainnya...</option>
+                    </select>
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label for="form_message">Pesan *</label>
+                    <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+            <div class="col-md-12">
+               <button class="btn-lg btn-success" formaction="index.html">Send Message</button>
+            </script>
+            </div>
+            <div id="map" style="width: 100%;height: 500px;"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <p class="text-muted">
+                    
+                    
+            </div>
+        </div>
+    </div>
+
+</form>
+
+
+<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+<script>
+    // koordinat dan zoom view peta
+    // Koordinat yang digunakan berupa latitude dan longitude,
+    //sebagai contoh saya menggunakan Koordinat CCIT
+    var map = L.map('map').setView([-6.362114, 106.8249319], 17);
+    // ini adalah copyright, bisa dicopot tapi lebih baik kita hargai sang penciptanya ya :)
+    L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+        subdomains: ['a', 'b', 'c'],
+    }).addTo(map);
+    // ini adalah koordinat marker
+    L.marker([-6.362114, 106.8249319]).addTo(map)
+    .bindPopup("Selamat Datang di <b>CCIT FTUI!</b>").openPopup();
+    var popup = L.popup();
+    function onMapClick(e) {
+        popup
+        .setLatLng(e.latlng)
+        .setContent("Koordinat pada titik ini adalah " + e.latlng.toString())
+        .openOn(map);
+    }
+    map.on('click', onMapClick);
+</script>

@@ -1,0 +1,54 @@
+[
+  
+    {
+        "nama" : " Alfi Naufal",
+        "email" : "Android Moble",
+        "Staff" : "alfinaufal.JPG"
+    },
+    
+
+    {
+        "nama" : " Jeremi Manogi",
+        "email" : "Android Moble",
+        "Staff" : "jere.JPG"  
+    },
+
+    
+   
+    {
+        "nama" : " Hilman Maulana Anhar",
+        "email" : "Web Dev",
+        "Staff" : "hilman.JPG"  
+    },
+
+    
+    {
+        "nama" : " Hanas Bayu Pratama",
+        "email" : "Web Dev",
+        "Staff" : "hanas.JPG"  
+    },
+
+
+    {
+        "nama" : " Andhika",
+        "email" : "Design",
+        "Staff" : "Andhika_design.jpg"  
+    },
+
+    {
+        "nama" : " Sogar",
+        "email" : "Design",
+        "Staff" : "Sogar_Desgn.JPG"  
+    },
+
+    {
+        "nama" : " Nico",
+        "email" : "Design",
+        "Staff" : "nico.JPG"  
+    },
+    {
+        "nama" : " Bagas",
+        "email" : "Design",
+        "Staff" : "bagas.JPG"  
+    }
+]
